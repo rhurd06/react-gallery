@@ -32,7 +32,7 @@ function App() {
         </header>
         {/* <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/> */}
-        <GalleryList />
+        <GalleryList photoArray={photoArray} getPhotos={getPhotos} />
       </div>
     );
 }
