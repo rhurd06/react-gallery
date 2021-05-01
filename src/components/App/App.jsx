@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import GalleryList from '../Gallery List/GalleryList';
+import GalleryList from '../GalleryList/GalleryList';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       url: '/gallery'
     })
     .then(response => {
-      console.log('response from getPhotos', response.data);
+      console.log('response from getPhotos', response);
       setPhotoArray(response.data);
     })
     .catch(error => {
@@ -22,7 +22,7 @@ function App() {
   }
 
   useEffect( () => {
-    setPhotoArray();
+    getPhotos();
   }, []);
 
     return (
@@ -32,7 +32,7 @@ function App() {
         </header>
         {/* <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/> */}
-        <GalleryList photoArray={photoArray} getPhotos={getPhotos} />
+        <GalleryList photoArray={photoArray}/>
       </div>
     );
 }
