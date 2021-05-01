@@ -1,14 +1,17 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 
-function GalleryList(props){
-    console.log('My gallery props are:', props);
-    // for( let i=0; i < props.photoArray.length; i++) {
-    //     console.log('GalleryList loop');
-    // }
+function GalleryList({photoArray, getPhotos}){
+    console.log('My gallery props are:', {photoArray, getPhotos});
+
     return (
         <div>
-            {props.photoArray.map( image => 
-                <GalleryItem key={image.id} image={image}
+            {photoArray.map( photo => 
+                <GalleryItem 
+                key={photo.id} 
+                photo={photo} 
+                // description={photo.description} 
+                // likes={photo.likes}
+                getPhotos={getPhotos}
                 />
             )}
         </div>

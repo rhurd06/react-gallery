@@ -8,11 +8,8 @@ function App() {
   const [photoArray, setPhotoArray] = useState([]);
 
   const getPhotos = () => {
-    axios({
-      method: 'GET',
-      url: '/gallery'
-    })
-    .then(response => {
+    axios.get('/gallery')
+    .then((response) => {
       console.log('response from getPhotos', response);
       setPhotoArray(response.data);
     })
@@ -32,7 +29,7 @@ function App() {
         </header>
         {/* <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/> */}
-        <GalleryList photoArray={photoArray}/>
+        <GalleryList photoArray={photoArray} getPhotos={getPhotos}/>
       </div>
     );
 }
