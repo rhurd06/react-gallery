@@ -33,13 +33,14 @@ function GalleryItem({getPhotos, photo}) {
 
     return (
         <div className="photos">
-            
-           {state ? (
-           <img onClick={setToggle} src={photo.path} /> 
-           ) : (
-            <p onClick={setToggle}> {photo.description}</p>)}
-            <p>{photo.likes} likes</p>
-            <button onClick={addLike} data-id={photo.id}>Like</button>
+            <div>
+                {state ? (
+                <img onClick={setToggle} src={photo.path} /> 
+                ) : (
+                <p onClick={setToggle}> {photo.description}</p>)}
+                <p>{photo.likes} likes</p>
+                <button onClick={addLike} data-id={photo.id}>Like</button>
+            </div>
         </div>
     )
 }

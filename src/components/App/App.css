@@ -11,7 +11,10 @@
   font-family: fantasy;
   border-style: double;
   border-color: darkslategrey;
-  border-width: 1rem;
+  border-width: 2rem;
 }
 
+main {
+  width: 80%;
+}
 

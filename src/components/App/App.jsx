@@ -27,9 +27,11 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Lamar Lawrence</h1>
         </header>
+        <main>
         {/* <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/> */}
         <GalleryList photoArray={photoArray} getPhotos={getPhotos}/>
+        </main>
       </div>
     );
 }
