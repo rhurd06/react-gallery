@@ -5,4 +5,5 @@ img{
 
 .photos {
     display: inline-block;
+    padding: 2rem;
 }

@@ -3,13 +3,15 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: gold;
   padding: 1em;
-  color: white;
+  color: blueviolet;
   margin-bottom: 1em;
+  font-size: 40px;
+  font-family: fantasy;
+  border-style: double;
+  border-color: darkslategrey;
+  border-width: 1rem;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
 

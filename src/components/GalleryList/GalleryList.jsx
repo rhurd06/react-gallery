@@ -9,8 +9,6 @@ function GalleryList({photoArray, getPhotos}){
                 <GalleryItem 
                 key={photo.id} 
                 photo={photo} 
-                // description={photo.description} 
-                // likes={photo.likes}
                 getPhotos={getPhotos}
                 />
             )}
