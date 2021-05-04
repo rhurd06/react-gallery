@@ -16,8 +16,7 @@ function GalleryItem({getPhotos, photo}) {
         }
     }
 
-    function addLike (event) {
-        let id = event.currentTarget.dataset.id;
+    function addLike (id) {
         console.log('clicked the like button', id);
 
     axios.put(`/gallery/like/${id}`)
@@ -39,7 +38,7 @@ function GalleryItem({getPhotos, photo}) {
                 ) : (
                 <p onClick={setToggle}> {photo.description}</p>)}
                 <p>{photo.likes} likes</p>
-                <button onClick={addLike} data-id={photo.id}>Like</button>
+                <button onClick={(event) => addLike(photo.id)}>Like</button>
             </div>
         </div>
     )
