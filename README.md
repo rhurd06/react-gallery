@@ -1,9 +1,11 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Photo Gallery
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Duration: 12 hours
+
+This photo gallery application allows users to like a photo and view a description of the photo by clicking on it.
+
+(./wireframes/gallery.png)
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
