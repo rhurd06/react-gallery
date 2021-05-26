@@ -22,7 +22,7 @@ This photo gallery application allows users to like a photo and view a descripti
 1. Click on the 'like' button to show some love to that image. The user will be able to view the total 'likes' above the button. (see image below)
 1. Click on the photo to toggle the view to a brief description of the photo. To toggle back simply click on the descreiption. (see image below)
 
-![Gallery] (./wireframes/description-like-view.png)
+![Gallery](./wireframes/description-like-view.png)
 
 ## Built With:
 
