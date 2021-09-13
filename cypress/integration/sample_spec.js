@@ -10,8 +10,10 @@ describe('My second test', () => {
     })
 })
 
+// must run client and server before running test, 
+// otherwise it won't work
 describe('My first real test on the app', () => {
     it('Visits my React Gallery', () => {
-        cy.visit('https://localhost:3000')
+        cy.visit('localhost:3000')
     })
 })
