@@ -33,3 +33,4 @@ This photo gallery application allows users to like a photo and view a descripti
 - Node.js
 - Express
 - JSON
+- Cypress.io
