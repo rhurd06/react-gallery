@@ -1,14 +1,14 @@
-describe('My first test', () => {
-    it(`Doesn't do much`, () => {
-        expect(true).to.equal(true)
-    })
-})
+// describe('My first test', () => {
+//     it(`Doesn't do much`, () => {
+//         expect(true).to.equal(true)
+//     })
+// })
 
-describe('My second test', () => {
-    it(`Also doesn't do much`, () => {
-        expect(true).to.equal(false)
-    })
-})
+// describe('My second test', () => {
+//     it(`Also doesn't do much`, () => {
+//         expect(true).to.equal(false)
+//     })
+// })
 
 // must run client and server before running test, 
 // otherwise it won't work
@@ -17,3 +17,13 @@ describe('My first real test on the app', () => {
         cy.visit('localhost:3000')
     })
 })
+
+describe('Testing the links on the app', () => {
+    it('finds the content "like"', () => {
+        cy.visit('localhost:3000')
+        cy.contains('like')
+    })
+})
+
+
+
