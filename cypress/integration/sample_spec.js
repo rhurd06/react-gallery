@@ -32,3 +32,14 @@ describe('Testing links on the app', () => {
     })
 })
 
+describe(
+    'Testing to see if clicking the image toggles to the description', 
+    () => {
+        it('Gets the description', () => {
+            cy.visit('localhost:3000')
+            cy.contains('div').click()
+
+            cy.get('div')
+        })
+})
+
