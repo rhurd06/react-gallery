@@ -18,12 +18,17 @@ describe('My first real test on the app', () => {
     })
 })
 
-describe('Testing the links on the app', () => {
+describe('Testing for content on the app', () => {
     it('finds the content "like"', () => {
         cy.visit('localhost:3000')
         cy.contains('like')
     })
 })
 
-
+describe('Testing links on the app', () => {
+    it('Clicks the link "Like"', () => {
+        cy.visit('localhost:3000')
+        cy.contains('like').click()
+    })
+})
 
