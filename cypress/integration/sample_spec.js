@@ -37,9 +37,8 @@ describe(
     () => {
         it('Gets the description', () => {
             cy.visit('localhost:3000')
-            cy.contains('div').click()
+            cy.get('.test').click()
 
-            cy.get('div')
         })
 })
 
