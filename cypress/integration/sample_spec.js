@@ -38,7 +38,7 @@ describe(
         it('Gets the description', () => {
             cy.visit('localhost:3000')
             cy.get('.test')
-            cy.focused().click()
+            cy.focused('.testImage').click()
 
         })
 })
