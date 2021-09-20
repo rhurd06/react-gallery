@@ -32,9 +32,9 @@ function GalleryItem({getPhotos, photo}) {
 
     return (
         <div className="photos">
-            <div>
+            <div className="testImage">
                 {state ? (
-                <img onClick={setToggle} src={photo.path} className="testImage" /> 
+                <img onClick={setToggle} src={photo.path} /> 
                 ) : (
                 <p onClick={setToggle}> {photo.description}</p>)}
                 <p>{photo.likes} likes</p>
